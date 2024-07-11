@@ -19,6 +19,7 @@ YT_HELP_MESSAGE = """
 
 
 <b>Check all yt-dlp api options from this <a href='https://github.com/yt-dlp/yt-dlp/blob/master/yt_dlp/YoutubeDL.py#L184'>FILE</a> or use this <a href='https://t.me/mltb_official_channel/177'>script</a> to convert cli arguments to api options.</b>
+== @TELLYCLOUD_BOTS
 """
 
 MIRROR_HELP_MESSAGE = """
@@ -45,6 +46,8 @@ MIRROR_HELP_MESSAGE = """
 <b>-j:</b> Join split files together before extracting or zipping.
 <b>-rcf:</b> Set Rclone flags for the command.
 <b>main:dump/ubuntu.iso</b> or <b>rcl:</b> Treat a path as an rclone download.</blockquote>
+
+== @TELLYCLOUD_BOTS
 """
 
 CLONE_HELP_MESSAGE = """
@@ -64,6 +67,8 @@ drive_id must be a folder ID, and index must be a URL, otherwise it will not acc
 <code>/{cmd}</code> (rcl or rclone_path) -up (rcl or rclone_path) -rcf flagkey:flagvalue|flagkey|flagkey:flagvalue
 
 Note: If -up is not specified, the rclone destination will be the RCLONE_PATH from config.env.
+
+== @TELLYCLOUD_BOTS
 """
 
 PASSWORD_ERROR_MESSAGE = """
@@ -72,6 +77,7 @@ PASSWORD_ERROR_MESSAGE = """
 <b>Example:</b> {}::love you
 Note: No spaces between the signs <b>::</b>
 For the password, you can use a space!
+== @TELLYCLOUD_BOTS
 """
 
 
