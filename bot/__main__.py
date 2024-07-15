@@ -77,24 +77,24 @@ async def stats(_, message):
     cpuUsage = cpu_percent(interval=0.5)
     quote = Quote.print().split('―', 1)[0].strip().replace("“", "").replace("”", "")
     limit_mapping = {
-        '🧲 Tᴏʀʀᴇɴᴛ'  : config_dict.get('TORRENT_LIMIT',  '∞'),
-        '🟢 Gᴅʀɪᴠᴇ'   : config_dict.get('GDRIVE_LIMIT',   '∞'),
-        '🔴 Yᴛᴅʟᴘ'    : config_dict.get('YTDLP_LIMIT',    '∞'),
-        '🔗 Dɪʀᴇᴄᴛ'   : config_dict.get('DIRECT_LIMIT',   '∞'),
-        '🚀 Lᴇᴇᴄʜ'    : config_dict.get('LEECH_LIMIT',    '∞'),
-        '⚡️ Cʟᴏɴᴇ'     : config_dict.get('CLONE_LIMIT',    '∞'),
-        'Ⓜ️ Mᴇɢᴀ'     : config_dict.get('MEGA_LIMIT',     '∞'),
-        '👤 Usᴇʀ ᴛᴀsᴋ': config_dict.get('USER_MAX_TASKS', '∞')}
+        <blockquote>'🧲 Tᴏʀʀᴇɴᴛ'     : config_dict.get('TORRENT_LIMIT',  '∞'),
+        '🟢 Gᴅʀɪᴠᴇ'      : config_dict.get('GDRIVE_LIMIT',   '∞'),
+        '🔴 Yᴛᴅʟᴘ'       : config_dict.get('YTDLP_LIMIT',    '∞'),
+        '🔗 Dɪʀᴇᴄᴛ'      : config_dict.get('DIRECT_LIMIT',   '∞'),
+        '🚀 Lᴇᴇᴄʜ'       : config_dict.get('LEECH_LIMIT',    '∞'),
+        '⚡️ Cʟᴏɴᴇ'       : config_dict.get('CLONE_LIMIT',    '∞'),
+        'Ⓜ️ Mᴇɢᴀ'        : config_dict.get('MEGA_LIMIT',     '∞'),
+        '👤 Usᴇʀ ᴛᴀsᴋ'   : config_dict.get('USER_MAX_TASKS', '∞')}
     system_info = f'<b>{quote}</b>\n\n'\
         f'<b><a href="https://t.me/TELLYCLOUD_Bots"><b>☬𝐓𝐄𝐋𝐋𝐘𝐂𝐋𝐎𝐔𝐃 𝐁𝐎𝐓𝐒™☬</b></a>\n\n'\
         f'<b>Sʏsᴛᴇᴍ sᴛᴀᴛs 🚀♥️</b>\n\n'\
-        f'🤖 Bᴏᴛ ᴜᴘᴛɪᴍᴇ : {currentTime}\n'\
-        f'🖥️ Sʏs ᴜᴘᴛɪᴍᴇ : {osUptime}\n'\
-        f'⚡️ Cᴘᴜ ᴜsᴀɢᴇ  : {cpuUsage}%\n'\
-        f'🧨 Rᴀᴍ ᴜsᴀɢᴇ  : {memory.percent}%\n'\
-        f'💿 Dɪsᴋ ᴜsᴀɢᴇ : {disk}%\n'\
-        f'🪫 Fʀᴇᴇ sᴘᴀᴄᴇ : {get_readable_file_size(free)}\n'\
-        f'💯 Tᴏᴛᴀʟ sᴘᴀᴄᴇ: {get_readable_file_size(total)}\n\n'\
+        f'🤖 Bᴏᴛ ᴜᴘᴛɪᴍᴇ  : {currentTime}\n'\
+        f'🖥️ Sʏs ᴜᴘᴛɪᴍᴇ  : {osUptime}\n'\
+        f'⚡️ Cᴘᴜ ᴜsᴀɢᴇ   : {cpuUsage}%\n'\
+        f'🧨 Rᴀᴍ ᴜsᴀɢᴇ   : {memory.percent}%\n'\
+        f'💿 Dɪsᴋ ᴜsᴀɢᴇ  : {disk}%\n'\
+        f'🪫 Fʀᴇᴇ sᴘᴀᴄᴇ  : {get_readable_file_size(free)}\n'\
+        f'💯 Tᴏᴛᴀʟ sᴘᴀᴄᴇ : {get_readable_file_size(total)}</blockquote>\n\n'\
             
     limitations = f'<b>Lɪᴍɪᴛᴀᴛɪᴏɴs 🚀♥️{quote}</b>\n\n'
     
