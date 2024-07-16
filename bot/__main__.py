@@ -77,7 +77,7 @@ async def stats(_, message):
     cpuUsage = cpu_percent(interval=0.5)
     quote = Quote.print().split('―', 1)[0].strip().replace("“", "").replace("”", "")
     limit_mapping = {
-        <blockquote>'🧲 Tᴏʀʀᴇɴᴛ'     : config_dict.get('TORRENT_LIMIT',  '∞'),
+        '🧲 Tᴏʀʀᴇɴᴛ'     : config_dict.get('TORRENT_LIMIT',  '∞'),
         '🟢 Gᴅʀɪᴠᴇ'      : config_dict.get('GDRIVE_LIMIT',   '∞'),
         '🔴 Yᴛᴅʟᴘ'       : config_dict.get('YTDLP_LIMIT',    '∞'),
         '🔗 Dɪʀᴇᴄᴛ'      : config_dict.get('DIRECT_LIMIT',   '∞'),
@@ -93,8 +93,8 @@ async def stats(_, message):
         f'⚡️ Cᴘᴜ ᴜsᴀɢᴇ   : {cpuUsage}%\n'\
         f'🧨 Rᴀᴍ ᴜsᴀɢᴇ   : {memory.percent}%\n'\
         f'💿 Dɪsᴋ ᴜsᴀɢᴇ  : {disk}%\n'\
-        f'🪫 Fʀᴇᴇ sᴘᴀᴄᴇ  : {get_readable_file_size(free)}\n'\
-        f'💯 Tᴏᴛᴀʟ sᴘᴀᴄᴇ : {get_readable_file_size(total)}</blockquote>\n\n'\
+        f'🪫 Fʀᴇᴇ sᴘᴀᴄᴇ   : {get_readable_file_size(free)}\n'\
+        f'💯 Tᴏᴛᴀʟ sᴘᴀᴄᴇ : {get_readable_file_size(total)}\n\n'\
             
     limitations = f'<b>Lɪᴍɪᴛᴀᴛɪᴏɴs 🚀♥️{quote}</b>\n\n'
     
